@@ -1,13 +1,16 @@
 {
-  "scripts": {
-    "build": "esbuild app.jsx --bundle --outdir=dist",
-    "build:js": "node build.mjs"
-  },
-  "devDependencies": {
-    "esbuild": "^0.23.0"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }
+    "scripts": {
+        "build": "esbuild ./src/client.jsx --bundle --outfile=dist/app.js",
+        "build:js": "node build.mjs"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "esbuild": "^0.23.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    }
 }
