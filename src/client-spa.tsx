@@ -1,9 +1,8 @@
 import { Greet } from "./App";
-import { createRoot, hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import React from "react";
 
-hydrateRoot(
-    document.getElementById("root"),
+createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <Greet />
     </React.StrictMode>
