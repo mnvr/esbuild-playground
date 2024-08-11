@@ -1,7 +1,8 @@
 {
     "scripts": {
         "build": "esbuild ./src/client.jsx --bundle --outfile=dist/app.js",
-        "build:js": "node build.mjs"
+        "build:js": "node build.mjs",
+        "serve": "esbuild --serve --servedir=dist --serve-fallback=index.html"
     },
     "devDependencies": {
         "@types/react": "^18.3.3",
