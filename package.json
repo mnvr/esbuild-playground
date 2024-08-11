@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build-old": "esbuild ./src/client.jsx --bundle --outfile=dist/app.js",
+        "build:spa": "esbuild ./src/client.jsx --bundle --outfile=dist-spa/app.js",
+        "serve:spa": "esbuild --serve --servedir=dist-spa --serve-fallback=index.html",
         "build-old:js": "node build.mjs",
         "build": "sh build.sh",
         "serve": "esbuild --serve --servedir=dist --serve-fallback=dist/index.html"
